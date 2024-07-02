@@ -1,0 +1,22 @@
+server:
+  port: 8080
+#  servlet:
+#    context-path: /metadataApi
+
+spring:
+  application:
+    name: ai-demo
+  messages:
+    basename: i18n/saas
+    encoding: UTF-8
+    cache-duration: 3600MS
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  main:
+    allow-circular-references: true
+  mvc:
+    async:
+      request-timeout: 60000
+      timeout: 60000
